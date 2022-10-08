@@ -30,7 +30,6 @@ img {
     max-width: 100%;
 }
 
-
 body {
     font-family: 'Roboto',sans-serif;
     font-size: 14px;
@@ -41,15 +40,12 @@ body {
 }
 
 .container {
-    width: 1200px; /* Оригинал 1600px [Контент 1200px] */
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: #757575 solid; */
 }
-
-
 
 /* Шапка */
 
@@ -57,18 +53,18 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-.footer-container {
+.header__container {
     display:flex;
     align-items:center;
 }
 
 
-.header-navigation {
+.header__navigation {
     display: flex;
     
 }
 
-.header-logo { /* В шапке и подвале */
+.header__logo { /* В шапке и подвале */
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -81,11 +77,11 @@ body {
     margin-right: 93px;
 }
 
-.header-logo-web {
+.header__logo--color {
     color: var(--color-hover);
 }
 
-.header-navigation-list {
+.header__list {
     display: flex;
     font-weight: 500;
     font-size: 14px;
@@ -102,14 +98,14 @@ body {
     color: var(--main-text-color);
 }
 
-.active-page {
+.header__list--active-page {
     display: flex;
     position: relative;
     color: var(--color-hover);
     text-decoration: none;
 }
 
-.active-page:after {
+.header__list--active-page:after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -152,7 +148,7 @@ body {
     align-items: center;
 }
 
-.header-contacts-list {
+.header__contacts {
     display: flex;
     padding: 0;
     margin-left: auto;
@@ -160,7 +156,7 @@ body {
     align-items: center;
 }
 
-.contacts {
+.contacts { 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -171,7 +167,8 @@ body {
     padding-bottom: 32px;
 }
 
-.contacts-list {
+.header__mail,
+.header__tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -180,17 +177,27 @@ body {
     list-style: none;
 }
 
-.footer-link-icon{
-    color: var(--basic-header-background-color);
-    background-color: var(--color-hover);
-}
 
-.icon-footer-social {
-    color: inherit;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Основной блок */
-.main-order {
+.order {
     max-width: 1600px;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/preview.jpg);
@@ -204,7 +211,7 @@ body {
     margin-right: auto;
 }
 
-.main-order-h1 {
+.order__text {
     width: 700px;
     font-weight: 900;
     font-size: 44px;
@@ -217,7 +224,7 @@ body {
     margin-bottom: 30px;
 }
 
-.main-order-button {
+.order__button {
     cursor: pointer;
     background: var(--color-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -235,7 +242,7 @@ body {
 }
 
 /* modal wind */
-.backdrop {
+.modal__backdrop {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -248,11 +255,12 @@ body {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
+.modal__backdrop--is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
+
 .modal {
     position: absolute;
     top: 50%;
@@ -265,9 +273,7 @@ body {
     border-radius: 4px;
 }
 
-
-
-.button-close {
+.modal__button-close {
     position: absolute;
     display: flex;
     align-items: center;
@@ -283,14 +289,13 @@ body {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-second-div {
+
+.modal__block {
     padding:40px
 
 }
 
-
-
-.modal-div-form {
+.modal__block--relative {
     position: relative;
 }
 
@@ -303,7 +308,7 @@ body {
     color: var(--second-text-color)
 }
 
-.form-modal {
+.modal__form {
     width: 448px;
     height: 40px;
     padding-left: 42px;
@@ -313,31 +318,21 @@ body {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .form-modal:focus,
-.form-modal:active {
-    outline: 1px var(--color-hover) solid;
-    fill: var(--color-hover);
-} */
-.first-modal-div {
+.modal__block--indent {
     margin-top:10px;
 }
-
-
 
 .second-modal-div {
     margin-top: 10px;
 }
 
-
-.modal-text {
+.modal__text {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
 }
-
-
 
 .form-coment {
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -377,7 +372,7 @@ body {
 }
 
 .form-modal:focus,
-.form-modal-coment:focus,
+.modal__label--focus:focus,
 .form-coment:focus {
     border: 1px solid var(--color-hover);
 }
@@ -494,7 +489,6 @@ body {
     }
 }
 
-
 .no-scroll {
     overflow: hidden;
 }
@@ -518,17 +512,31 @@ body {
     margin-left: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-better {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-
 .main-batter-ul {
     display: flex;
     padding: 0;
 }
-
 
 .better-image {
     display: flex;
@@ -587,7 +595,6 @@ body {
     margin: 0;
 }
 
-
 .main-people-h2 {
     font-weight: 700;
     font-size: 36px;
@@ -639,13 +646,6 @@ body {
 .test1:hover {
     fill: var(--white-text-color)
 }
-
-/* .style-list-a:hover,
-.style-list-a:active {
-    color: var(--white-text-color);
-    background-color: var(--color-hover);
-    border-radius: 50%;
-} */
 
 .block-img {
     background: rgba(47, 48, 58, 0.8);
@@ -732,7 +732,6 @@ body {
     list-style: none;
     gap: 30px;
 }
-
 
 .client-a {
     display: flex;
@@ -857,8 +856,6 @@ body {
     position: relative;
 }
 
-
-
 .form-bc-mail {
     width: 358px;
     height: 50px;
@@ -901,6 +898,9 @@ body {
     margin-left: 10px;
 }
 
+.icon-footer-social {
+    color: inherit;
+}
 /* portfolio */
 
 .main-work-portfolio {
@@ -941,7 +941,6 @@ body {
     margin-bottom: 50px;
     gap:8px;
 }
-
 
 .work-list {
     display: flex;
@@ -987,7 +986,6 @@ body {
     transform: translateY(0%);
     background-color: rgba(33, 150, 243, 0.9);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .link-work:hover .overlay,
@@ -1022,7 +1020,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
-
 }
 
 .main-our-work-p {
