@@ -56,13 +56,13 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 1.56;
-        color: var(--white-text-color);
+        color: $white-text-color;
     }
 }
 
 .portfolio-border-box {
     padding: 20px 24px;
-    background: var(--white-text-color);
+    background: $white-text-color;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
@@ -72,13 +72,13 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-text-color);
+    color: $main-text-color;
 }
 
 .main-our-work-p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
+    color: $second-text-color;
     margin-top: 4px;
 }

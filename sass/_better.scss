@@ -31,7 +31,7 @@
         width: 270px;
         height: 120px;
         border-radius: 4px;
-        background-color: var(--filter-background-color);
+        background-color: $filter-background-color;
         margin-bottom: 30px;
     }
 
@@ -45,7 +45,7 @@
     }
 
     &__p {
-        color: var(--second-text-color);
+        color: $second-text-color;
     }
 }
 
