@@ -7,9 +7,8 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link href="./sass/main.css" rel="stylesheet" >
+    <link href="./css/main.css" rel="stylesheet" >
   </head>
   <body>
     <!--Шапка-->
@@ -52,7 +51,7 @@
                           </div>
                           <div class="modal__second">
                            <label for="form-modal-tel" class="modal__text-in">Телефон</label>
-                          <div class="modal__second">
+                          <div class="modal-div-form">
                             <input type="tel"  name="tel" class="modal__form" id="form-modal-tel" placeholder="" required>
                             <svg class="modal__icon" width="18px" height="18px"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
                           </div>
@@ -68,9 +67,9 @@
                           <label for="form-modal-coment" class="modal__label--focus modal-text-in">Коментар</label>
                             <textarea name="text" class="form-coment" id="form-modal-coment" placeholder="Введіть текст"></textarea>
                           </div>
-                          <div class="modal__accept">
-                            <input class="modal__policy-input" name="policy" type="checkbox" value="policy" id="policy">  
-                            <label for="policy" class="modal__policy"><svg class="new-chek" width="11px" height="8px"><use href="./images/symbol-defs.svg#icon-V"></use></svg>Погоджуюся з розсилкою та приймаю<a href="" class="link-policy">Умови договору</a></label>
+                          <div class="accept">
+                            <input class="policy-input" name="policy" type="checkbox" value="policy" id="policy">  
+                            <label for="policy" class="policy"><svg class="new-chek" width="11px" height="8px"><use href="./images/symbol-defs.svg#icon-V"></use></svg>Погоджуюся з розсилкою та приймаю<a href="" class="link-policy">Умови договору</a></label>
                           </div>
                            <button type="submit" class="modal__button">Відправити</button>
                         </form>
@@ -82,25 +81,25 @@
         <div class="container">
           <h2 class="better__hidden-h1">Переваги</h2>
             <ul class="better__list">
-              <li class="better__style first">
+              <li class="better__style">
                 <div class="better__image"><svg width="70px" height="70px"><use href="./images/symbol-defs.svg#icon-better1"></use></svg></div>
-                <h3 class="batter__text">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="batter__p">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                <h3 class="better__text">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="better__p">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
               </li>
-              <li class="better__style first">
+              <li class="better__style">
                 <div class="better__image"><svg width="70px" height="70px"><use href="./images/symbol-defs.svg#icon-better2"></use></svg></div>
-                <h3 class="batter__text">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="batter__p">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                <h3 class="better__text">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="better__p">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
               </li>
-              <li class="better__style first">
+              <li class="better__style">
                 <div class="better__image"><svg width="70px" height="70px"><use href="./images/symbol-defs.svg#icon-better3"></use></svg></div>
-                <h3 class="batter__text">ПЛАНУВАННЯ</h3>
-                <p class="batter__p">Так само консультація з широким активом значною мірою зумовлює.</p>
+                <h3 class="better__text">ПЛАНУВАННЯ</h3>
+                <p class="better__p">Так само консультація з широким активом значною мірою зумовлює.</p>
               </li>
-              <li class="better__style first">
+              <li class="better__style">
                 <div class="better__image"><svg width="70px" height="70px"><use href="./images/symbol-defs.svg#icon-better4"></use></svg></div>
-                <h3 class="batter__text">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="batter__p">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                <h3 class="better__text">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="better__p">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
               </li>
             </ul>
         </div>
@@ -123,7 +122,7 @@
             <ul class="main-people-list">
               <li class="main-people-personal">
               <img src="./images/person1.jpg" alt="Ігор Дем'яненко" width="270">
-                <div class="main-peaple-block">
+                <div class="main-people-block">
                   <h3 class="main-people-h3">Ігор Дем'яненко</h3>
                     <p class="main-people-p">Product Designer</p>
                       <ul class="style-list-social">
@@ -136,7 +135,7 @@
               </li>
           <li class="main-people-personal">
             <img src="./images/person2.jpg" alt="Ольга Рєпіна" width="270">
-              <div class="main-peaple-block">
+              <div class="main-people-block">
                 <h3 class="main-people-h3">Ольга Рєпіна</h3>
                   <p class="main-people-p">Frontend Developer</p>
                     <ul class="style-list-social">
@@ -149,7 +148,7 @@
           </li>
           <li class="main-people-personal">
               <img src="./images/person3.jpg" alt="Микола Тарасов" width="270">
-               <div class="main-peaple-block">
+               <div class="main-people-block">
                 <h3 class="main-people-h3">Микола Тарасов</h3>
                   <p class="main-people-p">Marketing</p>
                     <ul class="style-list-social">
@@ -162,7 +161,7 @@
           </li>
           <li class="main-people-personal">
             <img src="./images/person4.jpg" alt="Михайло Єрмаков" width="270">
-              <div class="main-peaple-block">
+              <div class="main-people-block">
                 <h3 class="main-people-h3">Михайло Єрмаков</h3>
                   <p class="main-people-p">UI Designer</p>
                     <ul class="style-list-social">

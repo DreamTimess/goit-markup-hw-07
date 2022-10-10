@@ -1,13 +1,13 @@
-@import "./variables";
-@import "./globalStyle";
-@import "./header";
-@import "./order";
-@import "./modal";
-@import "./better";
-@import "./client";
-@import "./personal";
-@import "./work";
-@import "./footer";
-@import "./filter-Page2";
-@import "./projects-Page2";
-
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/globalStyle";
+@import "./components/header";
+@import "./components/order";
+@import "./components/modal";
+@import "./components/better";
+@import "./components/client";
+@import "./components/personal";
+@import "./components/work";
+@import "./components/footer";
+@import "./components/portfolio/filter";
+@import "./components/portfolio/projects";

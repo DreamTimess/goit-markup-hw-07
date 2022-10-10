@@ -7,33 +7,32 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link href="./css/styles.css" rel="stylesheet" >
+    <link href="./css/main.css" rel="stylesheet" >
   </head>
   <body>
     <!--Шапка-->
     <header class="header">
-      <div class="container footer-container">
-        <nav class="header-navigation">
-        <a class="header-logo" href=""><span class="header-logo-web">Web</span>Studio</a>
-        <ul class="header-navigation-list">
-          <li class="header-navigation-list"><a class="link nav" href="./index.html">Студія</a></li>
-          <li class="header-navigation-list"><a class="active-page nav" href="./portfolio.html">Портфоліо</a></li>
-          <li class="header-navigation-list"><a class="link nav" href="">Контакти</a></li>
-        </ul>
+      <div class="header__container container">
+        <nav class="header__navigation">
+          <a class="header__logo" href=""><span class="header__logo--color">Web</span>Studio</a>
+            <ul class="header__list">
+              <li class="header__list"><a class="header__list--page" href="./index.html">Студія</a></li>
+              <li class="header__list"><a class="header__list--active-page" href="./portfolio.html">Портфоліо</a></li>
+              <li class="header__list"><a class="header__list--page" href="">Контакти</a></li>
+            </ul>
         </nav>
-        <ul class="header-contacts-list">
-            <li class="contacts-list"><a class="link contacts" href="mailto:info@devstudio.com"><svg class="icon-tel link" width="16" height="12"><use href="./images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
-            <li class="contacts-list"><a class="link contacts" href="tel:+380961111111"><svg class="icon-mail link" width="10" height="15"><use href="./images/symbol-defs.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
-        </ul>
+          <ul class="header__contacts">
+            <li class="header__mail-tel"><a class="header__mail-tel--font" href="mailto:info@devstudio.com"><svg class="icon-tel link" width="16" height="12"><use href="./images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
+            <li class="header__mail-tel"><a class="header__mail-tel--font" href="tel:+380961111111"><svg class="icon-mail link" width="10" height="15"><use href="./images/symbol-defs.svg#icon-tel"></use></svg>+38 096 111 11 11</a></li>
+          </ul>
       </div>
     </header>
     <!--Фильтр-->
     <main>
         <section class="filter">
           <div class="container">
-          <h1 class="hidden-h1">Фінальні проекти</h1>
+          <h1 class="better__hidden-h1">Фінальні проекти</h1>
           <ul class="filter__list">
             <li class="filter__style-list"><button class="filter__link" type="button">Усі</button></li>
             <li class="filter__style-list"><button class="filter__link" type="button">Веб-сайти</button></li>
@@ -131,13 +130,13 @@
  <!--Подвал-->
     <footer class="first-footer">
       <div class="container footer">
-        <div class="footer-first-div">
-          <a class="header-logo-footer" href=""><span class="header-logo-web">Web</span>Studio</a>
-            <address class="address-font-style">
-              <ul class="footer-list">
-                <li class="style-list-footer"><a class="footer-list-map link" href="https://goo.gl/maps/4TLf4897QTm32brY9" target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="style-list-footer"><a class="footer-list-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="style-list-footer"><a class="footer-list-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <div class="first-footer-div">
+          <a class="footer-logo" href=""><span class="footer-logo-web">Web</span>Studio</a>
+            <address class="footer-list">
+              <ul>
+                <li class="style-list-footer"><a class="footer-list__map link" href="https://goo.gl/maps/4TLf4897QTm32brY9" target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li class="style-list-footer"><a class="footer-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="style-list-footer"><a class="footer-list__tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
               </ul>
             </address>
         </div>
@@ -150,12 +149,12 @@
                 <li><a class="footer-list-a" href=""><svg class="icon-footer-social" width="20px" height="20px"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
             </ul>
         </div>
-        <form class="form">
+        <form>
           <p class="p-footer">Підпишіться на розсилку</p>
-          <div class="div-form">
-          <input type="email" name="email" class="form-bc-mail" id="form-bc-mail" placeholder="E-mail" required>
+          <div class="mailing">
+          <input type="email" name="email" class="mailing__mail" id="form-bc-mail" placeholder="E-mail" required>
           <label for="form-bc-mail" class="form-bc-label"></label>
-          <button type="submit" class="button-footer">Підписатися <svg class="icon-footer-send" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-send"></use></svg></button>
+          <button type="submit" class="mailing__button">Підписатися <svg class="maileng__send" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-send"></use></svg></button>
           </div>
         </form>
       </div>
